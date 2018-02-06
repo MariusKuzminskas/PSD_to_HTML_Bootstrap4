@@ -15,6 +15,11 @@
   height: 90%;
 }
 
+.wrapper-parallax {
+  background-color: white;
+  margin-bottom: 328px;
+}
+
 .nav-container .social-nav {
   padding-left: 7%;
   padding-right: 7%;
@@ -43,17 +48,15 @@
 }
 
 .hero-container {
-  z-index: -100;
+  z-index: -1;
+  background-image: url("../img/heroImage.png");
+  background-size: cover;
+  background-position: center center;
   margin-top: -132px;
+  height: 60vh;
 }
 
 .hero-container .hero-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   color: white;
   font-size: 4rem;
   font-weight: 600;
@@ -96,14 +99,69 @@
   height: 120px;
 }
 
+.register-order-section {
+  background-color: white;
+}
+
 .register-order-section .video-container {
-  height: 60vh;
+  height: 70vh;
   width: 80%;
 }
 
 .register-order-section iframe {
   height: 100%;
   width: 100%;
+}
+
+.faq-section {
+  z-index: 1;
+  background-image: url("../img/faqBackground.jpeg");
+  background-size: cover;
+  height: 787px;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.faq-section .text-block {
+  margin-top: 2%;
+  background-color: rgba(248, 248, 248, 0.657);
+  padding-top: 8%;
+  padding-bottom: 18%;
+  padding-left: 7%;
+  height: 80%;
+}
+
+.faq-section a {
+  text-decoration: none;
+  background-color: #039be6;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-section {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  background-color: #039be6;
+}
+
+.footer-section .row {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-section p, .footer-section a {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer-section h5 {
+  color: white;
+  font-size: 1rem;
+}
+
+.footer-section .footer-logo {
+  margin-top: -5px;
 }
 
 .spacer {
