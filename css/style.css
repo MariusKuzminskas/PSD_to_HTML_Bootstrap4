@@ -1,2 +1,32 @@
+.nav-container .social-nav {
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: rgba(10, 18, 32, 0.493);
+}
+
+.nav-container .nav-link {
+  color: beige;
+}
+
+.nav-container .invisible-nav {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.nav-container .invisible-nav .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.109);
+}
+
+.nav-container .invisible-nav .dropdown-menu .dropdown-item {
+  color: antiquewhite;
+}
+
+.nav-container .invisible-nav .dropdown-menu .dropdown-item:hover {
+  color: black;
+}
+
+.hero-container {
+  margin-top: -132px;
+}
 
 /*# sourceMappingURL=style.css.map */

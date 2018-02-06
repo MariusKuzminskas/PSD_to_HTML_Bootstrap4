@@ -7,14 +7,64 @@
     <!-- Bootsrtap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- main script -->
     <script src="./js/script.js" defer></script>
-    <title>Skaičiuoklė testas</title>
+    <title>PSD cutout</title>
 </head>
 <body>
-    <section class="container main-container">
+    <section class="container-fluid nav-container px-0">
+        <nav class="navbar navbar-expand-lg social-nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#socialNav" aria-controls="socialNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="socialNav">
+            <div class="navbar-nav ">
+              <a class="nav-item nav-link border-right active" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-youtube"></i></a>
+              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="nav-item nav-link" href="#"><img src="./img/discord.png" alt="discord logo"></a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-item nav-link border-right active " href="#"><i class="fas fa-user-plus"></i> REGISTER</a>
+              <a class="nav-item nav-link " href="#"><i class="fas fa-sign-in-alt"></i> MY ACCOUNT</a>
+            </div>
+          </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg invisible-nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#invisibleNav" aria-controls="invisibleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="invisibleNav">
+            <div class="navbar-nav ">
+              <a class="nav-item nav-link" href="#"><img src="./img/2NavLogo.png" alt="discord logo"></a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="#">DEMO</a>
+              <a class="nav-item nav-link " href="#">ORDER</a>
+              <a class="nav-item nav-link " href="#">REVIEWS</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ENGLISH
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">RUSSIAN</a>
+                  <a class="dropdown-item" href="#">GREEK</a>
+                  <a class="dropdown-item" href="#">LITHUANIAN</a>
+                </div>
+              </li>
+            </div>
+          </div>
+        </nav>
+    </section>
     
+    
+    <section class="container-fluid hero-container px-0">
+    <img class="img-fluid w-100" src="./img/heroImage.png" alt="hero image">
+    </section>
     
     
     

@@ -1,0 +1,34 @@
+// social nav
+.nav-container {
+    .social-nav  {
+            padding-left: 7%;
+            padding-right: 7%;
+            background-color: rgba(10, 18, 32, 0.493);
+            .navbar-nav .nav-item {
+                //line-height: 0.5rem;
+
+            }
+        }
+        .nav-link {
+            color: beige;
+        }
+    .invisible-nav {
+        padding-left: 6%;
+        padding-right: 6%;
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.109);
+            .dropdown-item {
+                color: antiquewhite;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+// hero area
+.hero-container {
+    margin-top: -132px;
+}
