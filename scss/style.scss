@@ -1,3 +1,31 @@
+// imports
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+// variables
+$mainFont: 'Open Sans', sans-serif;
+
+// colors
+$navTextColor: rgb(255, 255, 255);
+$mainBlue: rgb(3, 155, 230);
+$mainYelllow: rgb(251, 192, 52);
+
+// globals
+* {
+   font-family: $mainFont; 
+}
+
+.yellow-text {
+    color: $mainYelllow;
+}
+.blue-text {
+    color: $mainBlue;
+}
+.h-90 {
+    height: 90%;
+}
+
+
+
 // social nav
 .nav-container {
     .social-nav  {
@@ -10,7 +38,7 @@
             }
         }
         .nav-link {
-            color: beige;
+            color: $navTextColor;
         }
     .invisible-nav {
         padding-left: 6%;
@@ -18,7 +46,7 @@
         .dropdown-menu {
             background-color: rgba(0, 0, 0, 0.109);
             .dropdown-item {
-                color: antiquewhite;
+                color: $navTextColor;
                 &:hover {
                     color: black;
                 }
@@ -30,5 +58,73 @@
 
 // hero area
 .hero-container {
+    z-index: -100;
     margin-top: -132px;
+    .hero-text {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $navTextColor;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+}
+
+// Things you shoud know section
+.things-you-shoud {
+    h2 {
+        color: $mainBlue;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .containter {
+        padding-right: 0;
+    }
+    
+    
+    .fa-angle-right {
+        color: $mainBlue;
+    }
+    .icon {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    p {
+        line-height: 2rem;
+    }
+    
+}
+
+// Choose booosting section
+.choose-boosting-section {
+    p {
+        line-height: 2rem;
+    }
+    .row {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .img-container {
+        height: 120px;
+    }
+}
+
+// How to refister and order section
+.register-order-section {
+    .video-container {
+        height: 60vh;
+        width: 80%;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.spacer {
+    height: 100vh;
 }

@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.yellow-text {
+  color: #fbc034;
+}
+
+.blue-text {
+  color: #039be6;
+}
+
+.h-90 {
+  height: 90%;
+}
+
 .nav-container .social-nav {
   padding-left: 7%;
   padding-right: 7%;
@@ -5,7 +22,7 @@
 }
 
 .nav-container .nav-link {
-  color: beige;
+  color: white;
 }
 
 .nav-container .invisible-nav {
@@ -18,7 +35,7 @@
 }
 
 .nav-container .invisible-nav .dropdown-menu .dropdown-item {
-  color: antiquewhite;
+  color: white;
 }
 
 .nav-container .invisible-nav .dropdown-menu .dropdown-item:hover {
@@ -26,7 +43,71 @@
 }
 
 .hero-container {
+  z-index: -100;
   margin-top: -132px;
+}
+
+.hero-container .hero-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.things-you-shoud h2 {
+  color: #039be6;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.things-you-shoud .containter {
+  padding-right: 0;
+}
+
+.things-you-shoud .fa-angle-right {
+  color: #039be6;
+}
+
+.things-you-shoud .icon {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+.things-you-shoud p {
+  line-height: 2rem;
+}
+
+.choose-boosting-section p {
+  line-height: 2rem;
+}
+
+.choose-boosting-section .row {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.choose-boosting-section .img-container {
+  height: 120px;
+}
+
+.register-order-section .video-container {
+  height: 60vh;
+  width: 80%;
+}
+
+.register-order-section iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.spacer {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
