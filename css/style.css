@@ -17,7 +17,7 @@
 
 .wrapper-parallax {
   background-color: white;
-  margin-bottom: 328px;
+  margin-bottom: 360px;
 }
 
 .nav-container .social-nav {
@@ -40,7 +40,7 @@
 }
 
 .nav-container .invisible-nav .dropdown-menu .dropdown-item {
-  color: white;
+  color: white !important;
 }
 
 .nav-container .invisible-nav .dropdown-menu .dropdown-item:hover {
@@ -128,7 +128,6 @@
   padding-top: 8%;
   padding-bottom: 18%;
   padding-left: 7%;
-  height: 80%;
 }
 
 .faq-section a {
@@ -139,6 +138,7 @@
 }
 
 .footer-section {
+  padding-top: 200px;
   position: fixed;
   bottom: 0;
   z-index: -1;
@@ -166,6 +166,24 @@
 
 .spacer {
   height: 100vh;
+}
+
+@media (max-width: 420px) {
+  .hero-container .hero-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper-parallax {
+    margin-bottom: 581px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .wrapper-parallax {
+    margin-bottom: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

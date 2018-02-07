@@ -16,12 +16,13 @@
 <body>
   <div class="wrapper-parallax">
     <section class="container-fluid nav-container px-0">
-        <!-- social nav -->
-      <nav class="navbar navbar-expand-lg social-nav">
+      
+      <!-- social nav -->
+      <nav class="navbar navbar-expand-lg social-nav  d-none d-lg-block">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#socialNav" aria-controls="socialNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-between" id="socialNav">
+          <div class="collapse navbar-collapse " id="socialNav">
             <div class="navbar-nav ">
               <a class="nav-item nav-link border-right active" href="#"><i class="fab fa-facebook-f"></i></a>
               <a class="nav-item nav-link border-right" href="#"><i class="fab fa-twitter"></i></a>
@@ -36,7 +37,7 @@
           </div>
         </nav>
         <!-- invisible nav -->
-        <nav class="navbar navbar-expand-lg invisible-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark invisible-nav">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#invisibleNav" aria-controls="invisibleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,6 +68,7 @@
     <section class="container-fluid hero-container px-0 d-flex justify-content-center align-items-center ">
       <!-- <img class="img-fluid w-100" src="./img/heroImage.png" alt="hero image"> -->
       <h1 class="hero-text text-center">SERVICES WE OFFER</h1>
+      
     </section>
 
 
@@ -181,10 +183,10 @@
 
     <!-- FAQ section -->
     <section class="container-fluid faq-section mt-5  px-0">
-       .       
-        <div class="text-block d-flex flex-column justify-content-between ">
-            <h2 class="text-uppercase blue-text font-weight-bold h1 ">have questions? </h2>
-            <p class="blockquote ">Our Support Live Chat is Online 24/7! Feel free to ask us anything! </p>
+        .      
+        <div class="text-block d-flex d-block flex-column justify-content-between ">
+            <h2 class="text-uppercase blue-text font-weight-bold mb-5 h1 ">have questions? </h2>
+            <p class="blockquote mb-5">Our Support Live Chat is Online 24/7! Feel free to ask us anything! </p>
             <div><a href="#" class="text-uppercase d-inline-block px-4 py-2 "> go to faq page </a></div> 
           </div>
     </section>
@@ -193,14 +195,14 @@
     <footer class="container-fluid footer-section px-0">
       <div class="row pt-5">
         <!-- column 1 -->
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <img class="footer-logo" src="./img/footerLogo1.png" alt="padoboost logo">
           <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet cupiditate vero, consequatur amet consectetur cupiditate </p>
           <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. At id fugiat animi. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quis suscipit, doloribus quae id laudantium voluptatum! </p>
           <p> &copy 2017 padoboost.com | All Rights Reserved</p>
         </div>
         <!-- column 2 -->
-        <div class="col-md-2">
+        <div class="col-lg-2 col-md-6 d-none d-lg-block ">
           <h5 class="mb-4">Quick Link</h5>
           <a class="d-block" href="#">F.A.Q</a>
           <a class="d-block" href="#">Demo</a>
@@ -208,7 +210,7 @@
           <a class="d-block" href="#">Terms and Conditions</a>
         </div>
         <!-- column 3 -->
-        <div class="col-md-2">
+        <div class="col-lg-2 col-md-6 d-none d-lg-block">
           <h5 class="mb-4">Boost Services</h5>
           <a class="d-block" href="#">Solo Division</a>
           <a class="d-block" href="#">Duo Division</a>
@@ -219,7 +221,7 @@
           <a class="d-block" href="#">Normal Games</a>
         </div>
         <!-- column 4 -->
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
             <h5 class="mb-4">We accept payments with:</h5>
             <img class="d-block" src="./img/payments.png" alt="padoboost logo">
           </div>

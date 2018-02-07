@@ -27,7 +27,7 @@ $mainYelllow: rgb(251, 192, 52);
 
 .wrapper-parallax {
     background-color: $navTextColor;
-    margin-bottom: 328px;
+    margin-bottom: 360px;
 }
 
 // social nav
@@ -50,7 +50,7 @@ $mainYelllow: rgb(251, 192, 52);
         .dropdown-menu {
             background-color: rgba(0, 0, 0, 0.109);
             .dropdown-item {
-                color: $navTextColor;
+                color: $navTextColor !important;
                 &:hover {
                     color: black;
                 }
@@ -76,6 +76,8 @@ $mainYelllow: rgb(251, 192, 52);
         
     }
 }
+
+
 
 // Things you shoud know section
 .things-you-shoud {
@@ -146,7 +148,7 @@ $mainYelllow: rgb(251, 192, 52);
         padding-top: 8%;
         padding-bottom: 18%; 
         padding-left: 7%;
-        height: 80%;
+        
     }
     a {
         text-decoration: none;
@@ -158,6 +160,7 @@ $mainYelllow: rgb(251, 192, 52);
 
 // footer
 .footer-section {
+    padding-top: 200px;
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -183,4 +186,27 @@ $mainYelllow: rgb(251, 192, 52);
 
 .spacer {
     height: 100vh;
+}
+
+//media queries
+
+@media (max-width: 420px) {
+    .hero-container .hero-text {
+    font-size: 3rem;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .wrapper-parallax {
+        margin-bottom: 581px;
+    }
+
+}
+@media (max-width: 1024px) and (min-width: 1024px) {
+    .wrapper-parallax {
+        margin-bottom: 400px;
+    }
+    
 }
