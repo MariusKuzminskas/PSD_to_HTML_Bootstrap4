@@ -5,7 +5,7 @@
 $mainFont: 'Open Sans', sans-serif;
 
 // colors
-$navTextColor: rgb(255, 255, 255);
+$white: rgb(255, 255, 255);
 $mainBlue: rgb(3, 155, 230);
 $mainYelllow: rgb(251, 192, 52);
 
@@ -24,11 +24,13 @@ $mainYelllow: rgb(251, 192, 52);
     height: 90%;
 }
 
-
+// wraps all content but footer to show the footer that is fixed at the botom
 .wrapper-parallax {
-    background-color: $navTextColor;
+    background-color: $white;
     margin-bottom: 360px;
 }
+
+
 
 // social nav
 .nav-container {
@@ -36,25 +38,29 @@ $mainYelllow: rgb(251, 192, 52);
             padding-left: 7%;
             padding-right: 7%;
             background-color: rgba(10, 18, 32, 0.493);
-            .navbar-nav .nav-item {
-                //line-height: 0.5rem;
-
+            a {
+                color: $white;
+                text-decoration: none;
+                padding-right: 5px;
+                padding-left: 5px;
+                font-size: 1.15rem;
             }
         }
-        .nav-link {
-            color: $navTextColor;
-        }
+        
     .invisible-nav {
         padding-left: 6%;
         padding-right: 6%;
         .dropdown-menu {
             background-color: rgba(0, 0, 0, 0.109);
             .dropdown-item {
-                color: $navTextColor !important;
+                color: $white !important;
                 &:hover {
                     color: black;
                 }
             }
+        }
+        .navbar-toggler {
+            background-color: rgba(0, 0, 0, 0.65);
         }
     }
 }
@@ -66,10 +72,10 @@ $mainYelllow: rgb(251, 192, 52);
     background-image: url("../img/heroImage.png");
     background-size: cover;
     background-position: center center;
-    margin-top: -132px;
+    margin-top: -120px;
     height: 60vh; 
     .hero-text {
-        color: $navTextColor;
+        color: $white;
         font-size: 4rem;
         font-weight: 600;
         letter-spacing: 3px;
@@ -119,9 +125,9 @@ $mainYelllow: rgb(251, 192, 52);
     }
 }
 
-// How to refister and order section
+// How to register and order section
 .register-order-section {
-    background-color: $navTextColor;
+    background-color: $white;
     .video-container {
         height: 70vh;
         width: 80%;
@@ -153,7 +159,7 @@ $mainYelllow: rgb(251, 192, 52);
     a {
         text-decoration: none;
         background-color: $mainBlue;
-        color: $navTextColor;
+        color: $white;
         font-size: 0.8rem;
     }
 }
@@ -164,18 +170,17 @@ $mainYelllow: rgb(251, 192, 52);
     position: fixed;
     bottom: 0;
     z-index: -1;
-    //height: 40vh;
     background-color: $mainBlue;
     .row {
         margin-left: 10%;
         margin-right: 10%;
     }
     p, a {
-        font-size: 0.9rem;
-        color: $navTextColor;
+        font-size: 0.8rem;
+        color: $white;
     }
     h5 {
-        color: $navTextColor;
+        color: $white;
         font-size: 1rem;
     }
     .footer-logo {
@@ -190,23 +195,41 @@ $mainYelllow: rgb(251, 192, 52);
 
 //media queries
 
+// mobile portrait view hero text size reduced, account item size reduced to fit
 @media (max-width: 420px) {
     .hero-container .hero-text {
     font-size: 3rem;
     }
-
-
+    .social-nav .account-items a {
+        font-size: 0.9rem;
+    }
 }
-
+// tablet view footer size fix, hiding social items at the top
 @media (max-width: 576px) {
     .wrapper-parallax {
         margin-bottom: 581px;
     }
+    #social-items a, #discord-logo {
+        display: none;
+    }
+    
 
+// big tablet, small laptop view, footer size fix
 }
 @media (max-width: 1024px) and (min-width: 1024px) {
     .wrapper-parallax {
         margin-bottom: 400px;
     }
-    
+}
+
+// large desktop footer size fix
+@media (min-width: 1200px) {
+    .wrapper-parallax {
+        margin-bottom: 300px;
+    }
+    // large desktop menu closer to the center
+    .nav-container .social-nav, .nav-container .invisible-nav  {
+        padding-left: 15%;
+        padding-right: 15%;
+    }    
 }

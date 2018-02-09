@@ -21,32 +21,29 @@
     <section class="container-fluid nav-container px-0">
       
       <!-- social nav -->
-      <nav class="navbar navbar-expand-lg social-nav  d-none d-lg-block">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#socialNav" aria-controls="socialNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="socialNav">
-            <div class="navbar-nav ">
-              <a class="nav-item nav-link border-right active" href="#"><i class="fab fa-facebook-f"></i></a>
-              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-twitter"></i></a>
-              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-youtube"></i></a>
-              <a class="nav-item nav-link border-right" href="#"><i class="fab fa-instagram"></i></a>
-              <a class="nav-item nav-link" href="#"><img src="./img/discord.png" alt="discord logo"></a>
+      <nav class="social-nav py-2">
+          <div class="d-flex justify-content-between" id="socialNav">
+            <div id="social-items" class="social-items d-inline-block">
+              <a class="border-right" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="border-right" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="border-right" href="#"><i class="fab fa-youtube"></i></a>
+              <a class="border-right" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="" href="#"><img src="./img/discord.png" alt="discord logo"></a>
             </div>
-            <div class="navbar-nav">
-              <a class="nav-item nav-link border-right active " href="#"><i class="fas fa-user-plus"></i> REGISTER</a>
-              <a class="nav-item nav-link " href="#"><i class="fas fa-sign-in-alt"></i> MY ACCOUNT</a>
+            <div class="account-items d-inline-block">
+              <a class="border-right active " href="#"><i class="fas fa-user-plus"></i> REGISTER</a>
+              <a class=" " href="#"><i class="fas fa-sign-in-alt"></i> MY&nbsp;ACCOUNT</a>
             </div>
           </div>
         </nav>
         <!-- invisible nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark invisible-nav">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#invisibleNav" aria-controls="invisibleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-dark invisible-nav">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#invisibleNav" aria-controls="invisibleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="invisibleNav">
             <div class="navbar-nav ">
-              <a class="nav-item nav-link" href="#"><img src="./img/2NavLogo.png" alt="discord logo"></a>
+              <a id="discord-logo" class="nav-item nav-link" href="#"><img src="./img/2NavLogo.png" alt="discord logo"></a>
             </div>
             <div class="navbar-nav">
               <a class="nav-item nav-link " href="#">DEMO</a>
@@ -226,7 +223,7 @@
         <!-- column 4 -->
         <div class="col-lg-4 col-md-6">
             <h5 class="mb-4">We accept payments with:</h5>
-            <img class="d-block" src="./img/payments.png" alt="padoboost logo">
+            <img class="d-block img-fluid" src="./img/payments.png" alt="padoboost logo">
           </div>
       </div>
     </footer>

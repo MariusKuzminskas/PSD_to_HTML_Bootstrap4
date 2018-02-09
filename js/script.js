@@ -1,6 +1,10 @@
-
+// action on scrool init
   AOS.init();
-  console.log("labukas");
+  
 
+// to show black background when menu activates
+  $(".navbar-toggler-icon").on("click", function() {
+    $(".invisible-nav").toggleClass("bg-dark");
+  })
 
   
